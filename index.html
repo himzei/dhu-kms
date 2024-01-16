@@ -130,13 +130,120 @@
     </section>
 
     <!-- Brands -->
+    <section class="brands">
+        <div class="inner-container">
+            <!-- 제목 -->
+            <div class="title">Brands</div>
+            <!-- 내용 -->
+            <div class="brands-container">
+                <div><img src="./images/b1.png" alt="icon" /></div>
+                <div><img src="./images/b2.png" alt="icon" /></div>
+                <div><img src="./images/b3.png" alt="icon" /></div>
+                <div><img src="./images/b4.png" alt="icon" /></div>
+                <div><img src="./images/b5.png" alt="icon" /></div>
+                <div><img src="./images/b6.png" alt="icon" /></div>
+                <div><img src="./images/b7.png" alt="icon" /></div>
+                <div><img src="./images/b8.png" alt="icon" /></div>
+                <div><img src="./images/b9.png" alt="icon" /></div>
+                <div><img src="./images/b10.png" alt="icon" /></div>
+                <div><img src="./images/b11.png" alt="icon" /></div>
+                <div><img src="./images/b12.png" alt="icon" /></div>
+                <div><img src="./images/b13.png" alt="icon" /></div>
+                <div><img src="./images/b14.png" alt="icon" /></div>
+                <div><img src="./images/b15.png" alt="icon" /></div>
+                <div><img src="./images/b16.png" alt="icon" /></div>
+                <div><img src="./images/b17.png" alt="icon" /></div>
+                <div><img src="./images/b18.png" alt="icon" /></div>
+                <div><img src="./images/b19.png" alt="icon" /></div>
+                <div><img src="./images/b20.png" alt="icon" /></div>
+                <div><img src="./images/b21.png" alt="icon" /></div>
+                <div><img src="./images/b22.png" alt="icon" /></div>
+                <div><img src="./images/b23.png" alt="icon" /></div>
+                <div><img src="./images/b24.png" alt="icon" /></div>
+                <div><img src="./images/b25.png" alt="icon" /></div>
+                <div><img src="./images/b26.png" alt="icon" /></div>
+                <div><img src="./images/b27.png" alt="icon" /></div>
+                <div><img src="./images/b28.png" alt="icon" /></div>
+                <div><img src="./images/b29.png" alt="icon" /></div>
+                <div><img src="./images/b30.png" alt="icon" /></div>
+                <div><img src="./images/b31.png" alt="icon" /></div>
+                <div><img src="./images/b32.png" alt="icon" /></div>
+                <div><img src="./images/b33.png" alt="icon" /></div>
+                <div><img src="./images/b34.png" alt="icon" /></div>
+                <div><img src="./images/b35.png" alt="icon" /></div>
+                <div><img src="./images/b36.png" alt="icon" /></div>
+                <div><img src="./images/b37.png" alt="icon" /></div>
+                <div><img src="./images/b38.png" alt="icon" /></div>
+                <div><img src="./images/b39.png" alt="icon" /></div>
+                <div><img src="./images/b40.png" alt="icon" /></div>
+                <div><img src="./images/b41.png" alt="icon" /></div>
+                <div><img src="./images/b42.png" alt="icon" /></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
     <!-- Contact -->
     <section class="contact">
         <div class="row-container">
             <!-- 왼쪽: 컨택트폼 -->
-            <div class="contact-form"></div>
+            <div class="contact-form">
+                <!-- 타이틀 -->
+                <div class="title-left">
+                    <h2>Reach us any time</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempore.</p>
+                </div>
+                <!-- 컨텍트폼 -->
+                <form
+                    method="post"
+                    class="gform"
+                    action="https://script.google.com/macros/s/AKfycbyc-rH9tLR8CJecW1cTXtm291S0sobE2RFwB6ai51e2RuTudq512QutyD2K_ixWt3DS/exec">
+                    <div>
+                        <label id="name">Name*</label>
+                        <input name="name" type="text" placeholder="KMS Autoparts" />
+                    </div>
+                    <div>
+                        <label id="email">E-mail*</label>
+                        <input name="email" type="text" placeholder="contact@email.com" />
+                    </div>
+                    <div>
+                        <label id="message">Message</label>
+                        <textarea name="message" rows="6" placeholder="Please leave your inquiry here"></textarea>
+                    </div>
+                    <div class="f-personals">
+                        <input type="checkbox" id="f-personal" />
+                        <label for="f-personal">
+                            <em></em>
+                            <p>
+                                You must agree to the private policy inquiry 
+                            </p>
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                    <div style="display:none" class="thankyou_message">
+                        <!-- You can customize the thankyou message by editing the code below -->
+                        <h2 class="confirm-email">감사합니다. 잠시 후 연락을 드리겠습니다.
+                        </h2>
+                    </div>
+                </form>
+
+            </div>
             <!-- 오른쪽: 지도 -->
-            <div class="contact-map" id="map"></div>
+            <div>
+
+                <div class="contact-map" id="map"></div>
+                <div class="contact-details">
+                    <h3>Our Office</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, minima!</p>
+                    <h3>Opening hours</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <h3>E-mail</h3>
+                    <p>contact@email.com</p>
+                    <h3>Skype</h3>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -149,6 +256,11 @@
         
         // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
         var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
+    <script 
+        data-cfasync="false" 
+        type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
     </script>
 </body>
 </html>
